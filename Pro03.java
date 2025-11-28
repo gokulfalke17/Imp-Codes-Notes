@@ -401,7 +401,7 @@ SQL
 
 
 9. What is Indexing? What is a Clustered Index?
-	Indexing → Like a book’s index, it helps find data quickly.
+	Indexing → Like a book’s index, it is used to helps find data quickly.
 	Clustered Index → Data is physically stored in the order of index. Only 1 clustered index per table.
 	Non-Clustered Index → Pointer to the data. Many allowed.
 	

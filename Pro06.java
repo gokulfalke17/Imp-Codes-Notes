@@ -97,6 +97,7 @@ public class Pro06 {
 				System.out.print(arr[i] + " ");
 			}
 		}
+		System.out.println();
 	}
 
 	private static void argmstrongCheck() {
@@ -161,10 +162,10 @@ public class Pro06 {
 	private static void findFirstNonRepeatingCharacter() {
 		String str = "swiss";
 
-		/*for(int i=0; i<str.length(); i++) {
+		for(int i=0; i<str.length(); i++) {
 			boolean flag = false;
 			for(int j=i+1; j<str.length(); j++) {
-				if(i!=j && str.charAt(i)==str.charAt(j)) {
+				if(str.charAt(i)==str.charAt(j)) {
 					flag = true;
 				}
 			}
@@ -173,7 +174,7 @@ public class Pro06 {
 				System.out.println("First Non-Repeated Character :: "+ str.charAt(i));
 				break;
 			}
-		}*/
+		}
 
 		/*Map<Character, Integer> map = new LinkedHashMap<Character, Integer>();
 		
@@ -192,10 +193,10 @@ public class Pro06 {
 			}
 		}*/
 
-		Character firstNonRepeatedCharacter = str.chars().mapToObj(ch -> (char) ch)
+		/*Character firstNonRepeatedCharacter = str.chars().mapToObj(ch -> (char) ch)
 				.collect(Collectors.groupingBy(ele -> ele, LinkedHashMap::new, Collectors.counting())).entrySet()
 				.stream().filter(ele -> ele.getValue() == 1).map(Map.Entry::getKey).findFirst().orElse(null);
-		System.out.println("First Non-Repeated Character :: " + firstNonRepeatedCharacter);
+		System.out.println("First Non-Repeated Character :: " + firstNonRepeatedCharacter);*/
 
 	}
 

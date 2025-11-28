@@ -487,9 +487,9 @@ Used for reusing common code in default methods.
 
 13. Difference between Overloading and Overriding
 
-Overloading → same method name, different parameters.
+Overloading → same method name, different parameters. (Compiletime Polymorphism)
 
-Overriding → child class changes parent’s method.
+Overriding → child class changes parent’s method. (Runtime Polymorphism)
 👉 Overloading = multiple TV remotes, Overriding = universal remote replaces parent’s.
 
 14. Why multiple inheritance not supported in Java?
@@ -588,7 +588,7 @@ Short way to write function.
 
 Interface with only one abstract method.
 
-Example: Runnable, Callable.
+Example: Runnable, Callable, Predicate, Consumer, Function, Supplier
 
 32. Difference between Stream map() and flatMap()
 

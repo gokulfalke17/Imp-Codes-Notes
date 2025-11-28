@@ -326,9 +326,9 @@ Account findAccountForUpdate(@Param("id") Long id);
 Feature			Optimistic Locking				Pessimistic Locking
 -------------------------------------------------------------------------------
 Assumption		Conflicts are rare				Conflicts are likely
-Locking			No lock, check at update			Lock row while reading
-Performance		Faster for reads					Slower due to waiting threads
-Use 				case	Read-heavy apps				Write-heavy apps
+Locking			No lock, check at update		Lock row while reading
+Performance		Faster for reads				Slower due to waiting threads
+Use case		Read-heavy apps					Write-heavy apps
 -------------------------------------------------------------------------------
 
 

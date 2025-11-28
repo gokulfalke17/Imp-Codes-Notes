@@ -1,5 +1,8 @@
 package com.nt.coding.challanges;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Snippet {
 	private static void longestSubstringWithoutRepeatingCharacter() {
 	    String str = "aabbbccccda";
